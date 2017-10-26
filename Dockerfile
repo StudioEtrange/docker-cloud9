@@ -5,6 +5,8 @@
 FROM node:slim
 MAINTAINER Antoine GIRARD <antoine.girard@sapk.fr>
 
+# git hash ee77c2aa8558c1f09ee130997baf5686dad83b88
+
 RUN buildDeps='make build-essential g++ gcc python2.7' && softDeps="tmux git" \
  && apt-get update && apt-get upgrade -y \
  && apt-get install -y $buildDeps $softDeps --no-install-recommends \
